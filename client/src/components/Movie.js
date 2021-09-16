@@ -16,7 +16,7 @@ const Movie = (props) => {
       .delete(`http://localhost:5000/api/movies/${id}`)
       .then(res => {
         props.deleteMovie(id);
-        push('/movies')
+        push('/movies');
       })
       .catch(err => console.log(err));
   }
